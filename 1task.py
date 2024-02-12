@@ -15,5 +15,10 @@ def image(prof):
     return render_template('index2.html', prof=prof)
 
 
+@app.route('/list_prof/<list>')
+def list_prof(list):
+    return render_template('index3.html', list=list)
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
